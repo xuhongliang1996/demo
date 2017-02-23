@@ -1,0 +1,58 @@
+/***********整体**************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 20px;
+}
+.main, .left, .middle, .right {
+	background: white;
+	border: 1px solid #999;
+	padding: 20px;
+}
+.main{
+	background: #eee !important;
+	min-width: 500px;/*游览器最小宽度*/
+	/*min-width: calc(200px + 200px + 120px + 80px);不适用因为有兼容等问题*/
+}
+img{
+	height: 80px;
+	width: 80px;
+	border: 1px solid #999;
+}
+/**********中间***************/
+.middle {
+  margin: 0 140px 0 220px;
+  min-width: 100px;
+}
+/**********左边***************/
+.left {
+  float: left;
+  width: 200px;
+}
+.left h2 {
+  font-size: 15px;
+}
+.logo.last {/*没有空格标识一个引用了两个class的标签*/
+  margin-bottom: 0;
+}
+.left .logo {/*有空格第一个class的子孙生效*/
+  float: left;
+}
+/**********右边**************/
+.right {
+  float: right;
+  height: auto;
+  width: 120px;
+}
+.logo {
+  margin-right: 15px;
+  margin-bottom: 15px;/*left logo跟right 最后一个log要取消*/
+}
+.logou{
+	margin-bottom: 0;
+}

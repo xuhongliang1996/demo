@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://www.html5jscss.com/html5-semantics-rich.html -->
+<html lang="zh-CN"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>HTML 5的革新——语义化标签(二) 》 html5jscss</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://www.html5jscss.com/xmlrpc.php">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.html5jscss.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.8"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./HTML 5语义化标签(二)_files/wp-emoji-release.min.js.下载" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="canonical" href="http://www.html5jscss.com/html5-semantics-rich.html">
+<meta name="description" content="HTML 5的革新之一：语义化标签二文本元素标签、分组元素标签。 HTML 5的革新——语义化标签(一)中介绍了一些HTML5新加的一些节元素，一张页面中结构元素构成网页大体，但是也需要其他内容来填充，譬如图片、文本、代码、表单、交互等等。所以接下来我们就来详细了解HTML5的新增加的和重新定义的文本元素标签、分组元素标签等其他元素标签。  文本字体元素  文字对SEO影响很大，而HTML5对一些文本字体元素的语义又重新定义了一遍，也增..">
+<meta name="keywords" content="html5, html5详解, seo, html5">
+
+<!--[if lt IE 9]> <script src="http://www.html5jscss.com/wp-content/themes/T1/js/html5.js" type="text/javascript"></script> <![endif]-->
+<link rel="stylesheet" href="./HTML 5语义化标签(二)_files/index.css">
+<link rel="shortcut icon" type="image/x-icon" href="http://www.html5jscss.com/wp-content/themes/T1/img/favicon.ico">
+</head>
+
+<body youdao="bind">
+<header id="header">
+
+    <hgroup class="header-logo">
+        <h1 id="site-title"><a href="http://www.html5jscss.com/" title="html5jscss" rel="home">html5jscss</a></h1>
+        <h2 id="site-description">
+             语义,各平台提供兼容性,提高用户浏览速度,优化产品的交互,提供可扩展的接口<br>
+        </h2>
+    </hgroup>
+    
+    <nav id="nav">
+		
+        <ul id="top_nav" class="primary-nav"><li id="menu-item-62" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-62"><a href="http://www.html5jscss.com/">首页</a></li>
+<li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-63"><a href="http://www.html5jscss.com/groups">前端技术专栏</a>
+<ul class="sub-menu">
+	<li id="menu-item-67" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-67"><a title="三架马车之一，web未来" href="http://www.html5jscss.com/category/html5css3/html5">html5<span>三架马车之一，web未来</span></a></li>
+	<li id="menu-item-66" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-66"><a title="三架马车之一，CSS2升级版" href="http://www.html5jscss.com/category/html5css3/css3_introduce">css3详解<span>三架马车之一，CSS2升级版</span></a></li>
+	<li id="menu-item-68" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68"><a title="三架马车之一，近几年终于改变人们对她的看法" href="http://www.html5jscss.com/category/js">JavaScript<span>三架马车之一，近几年终于改变人们对她的看法</span></a></li>
+	<li id="menu-item-69" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-69"><a title="一些排版技巧和兼容性方法" href="http://www.html5jscss.com/category/htmljscss/css">xHtml+css<span>一些排版技巧和兼容性方法</span></a></li>
+</ul>
+</li>
+<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="http://www.html5jscss.com/tags">标签</a></li>
+<li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96"><a href="http://www.html5jscss.com/links">前端导航</a></li>
+<li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a href="http://www.html5jscss.com/readers">讨论墙</a></li>
+</ul>
+        <!--搜索 -->
+            <form method="get" class="searchform" action="http://www.html5jscss.com/">
+                <input type="search" onfocus="if (this.value == &#39;回车搜索 直接有效&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;回车搜索 直接有效&#39;;}" value="回车搜索 直接有效" name="s" class="s textfield">
+            </form>
+
+
+    </nav> 
+    
+</header>
+<article class="container clearfix">
+
+	
+    <header class="page-header" id="post-60">
+        <div class="crumbs"><a href="http://www.html5jscss.com/">html5jscss首页</a><small>&gt;</small><a href="http://www.html5jscss.com/category/html5css3">html5+css3</a><small>&gt;</small><a href="http://www.html5jscss.com/category/html5css3/html5">html5</a><small>&gt;</small><a>HTML 5的革新——语义化标签(二)</a></div>        <h1>HTML 5的革新——语义化标签(二)</h1>
+    </header>
+
+    <div class="content-wrap">
+        <div class="content">
+
+
+            <small class="article-meta single-meta">
+                <span class="comments"><em>0</em>&nbsp;评论</span>
+                <span class="views"><em>4,502</em>&nbsp;阅读</span>
+                <span class="tags">标签：<a href="http://www.html5jscss.com/tag/html5" rel="tag">html5</a> <a href="http://www.html5jscss.com/tag/html5_introduce" rel="tag">html5详解</a> <a href="http://www.html5jscss.com/tag/seo-2" rel="tag">seo</a></span>
+                <span class="cates">分类：<a href="http://www.html5jscss.com/category/html5css3/html5" rel="category tag">html5</a></span>
+                                            </small>
+
+            <div class="entry">
+                <nav id="article-index" class="hidden">
+                                <h3 class="index-toggler">目录</h3>
+                                <dl><dt class="on"><a href="http://www.html5jscss.com/html5-semantics-rich.html#0" title="文本字体元素">文本字体元素</a></dt><dd class=""><a href="http://www.html5jscss.com/html5-semantics-rich.html#1" title="time元素">time元素</a></dd><dt class=""><a href="http://www.html5jscss.com/html5-semantics-rich.html#2" title="分组元素标签">分组元素标签</a></dt><dd class=""><a href="http://www.html5jscss.com/html5-semantics-rich.html#3" title="ol元素">ol元素</a></dd><dd class=""><a href="http://www.html5jscss.com/html5-semantics-rich.html#4" title="figure元素与figcaption元素">figure元素与figcaption元素</a></dd><dt class=""><a href="http://www.html5jscss.com/html5-semantics-rich.html#5" title="嵌入元素标签">嵌入元素标签</a></dt></dl></nav><p>HTML 5的革新之一：语义化标签二文本元素标签、分组元素标签。</p>
+<p><a href="http://www.html5jscss.com/html5-semantics-section-30.html" rel="HTML 5的革新——语义化标签(一)">HTML 5的革新——语义化标签(一)</a>中介绍了一些HTML5新加的一些节元素，一张页面中结构元素构成网页大体，但是也需要其他内容来填充，譬如图片、文本、代码、表单、交互等等。所以接下来我们就来详细了解HTML5的新增加的和重新定义的文本元素标签、分组元素标签等其他元素标签。<span id="more-60"></span></p>
+<section>
+<h2 id="0">文本字体元素</h2>
+<p>文字对SEO影响很大，而HTML5对一些文本字体元素的语义又重新定义了一遍，也增加了一些新的。那我们就来重新认识他们。</p>
+<ul>
+<li><b>a</b>（anchor 的缩写）： 用于定义超链接</li>
+<li><b>em</b>(emphasis 的缩写)：em 是句意强调，加与不加会引起语义变化，也可以理解为局部强调，用在语句某个单词上来改变句子的侧重。</li>
+<li><b>strong</b>：strong表示重要，strong 的强调则是一种随意无顺序的，看见某文时，立刻就凸显出来的关键词句。</li>
+<li><b>p</b>：p元素</li>
+<li><b>b</b>（bold 的缩写）：b 元素原本就是加粗，现在表示“文体突出”文字，通俗将是用来在文本中高亮显示某个或者几个字符，旨在引起用户的特别注意，无强调作用。譬如文档概要中的关键字，评论中的产品名，以及分类名。</li>
+<li><b>i</b>（italic 的缩写）：i 元素原本只是倾斜，现在描述为在普通文章中突出不同意见或语气或其他的一段文本，就像剧本里的话外音（外语、译音），或也可以用做排版的斜体文字。</li>
+<li><b>code</b>：定义计算机代码文本。</li>
+<li><b>q</b>（quote 的缩写）：用于定义一段引用的内容（短内容）</li>
+<li><b>cite </b>：用于定义引用内容出自书籍或杂志等的标题，不允许其他信息，如作者，日期等。</li>
+<li><b>u </b>（underline 的缩写）：定义下划线文本</li>
+<li><b>abbr </b>（abbreviation 的缩写）：定义一个缩写文本，建议在 abbr 的 title 属性中描述缩写的全称</li>
+<li><b>dfn  </b>（defining instance 的缩写）：用于定义一个术语</li>
+<li><b>var  </b>：定义计算机代码中的变量</li>
+<li><b>samp </b>（sample 的缩写）：由程序输出的示例文本</li>
+<li><b>kbd  </b>（keyboard  的缩写）：定义由键盘输入的文本</li>
+<li><b>wbr  </b>(word break)的缩写：定义换行的时机</li>
+<li><b>span </b>：没有任何语义</li>
+<li><b>br  </b>：定义一个换行符</li>
+</ul>
+<p>以上很多只是W3C定义，有些还不支持，但是为了彻底贯彻W3C的语义化，还是慢慢熟悉用起来吧。</p>
+<p>文本字体元素标签使用注意:</p>
+<ul>
+<li>在下面这些元素都不适合的时候：表重要的 strong ，表强调的 em ，表标题的 h1–h6，表高亮或标记文本的 p 等，就用 b 来表示。</li>
+<li>em 的强调是用在语句某个单词上来改变句子的侧重，可以说是局部的，而strong 和局部还是全局无关，局部强调用strong也可以，strong强调的是重要性，不会改变句意。</li>
+</ul>
+<section>
+<h3 id="1">time元素</h3>
+<p>time元素也是文本标签，因为是全新的标签，所以我们单独来介绍。time元素用来标记一篇文章的发布时间。</p>
+<figure>
+<pre class="prettyprint"><span class="pln"> </span><span class="tag">&lt;time</span><span class="pln"> </span><span class="atn">datetime</span><span class="pun">=</span><span class="atv">"2012-02-15"</span><span class="pln"> </span><span class="atn">pubdate</span><span class="tag">&gt;</span><span class="pln">2012年02月15日</span><span class="tag">&lt;/time&gt;</span></pre>
+</figure>
+<p>形如如上代码，知道<code>time</code>标签一般有三个组成部分</p>
+<ol>
+<li>机器可识别的时间戳：格式必须是年月日的数字以减号相隔，如果增加时间，那就在日期后面加字母T然后跟24小时格式的时间值以及时区偏移量，形如<code>datetime="2012-2-15T22:49:40+08:00"</code></li>
+<li>人可识别的文本内容：格式随意，只要能看懂。</li>
+<li>一个可选的pubdata标记：pubdata是个布尔值，如果需要，写上属性名就好<code>pubdata</code>。但是为了美观，我们也可以写成<code>pubdata=""</code></li>
+</ol>
+<p>我们还要注意的是，如果该<code>time</code>位于一个article中，那么它表示这篇文章的发布时间；如果不在article之中表示整个文档的发布时间。</p>
+<figure>
+<pre class="prettyprint"><span class="tag">&lt;article&gt;</span><span class="pln">
+    </span><span class="tag">&lt;header&gt;</span><span class="pln">
+        </span><span class="tag">&lt;h1&gt;</span><span class="pln">html5jscss网</span><span class="tag">&lt;time</span><span class="pln"> </span><span class="atn">datetime</span><span class="pun">=</span><span class="atv">"2012-02-14"</span><span class="tag">&gt;</span><span class="pln">2月14日</span><span class="tag">&lt;/time&gt;</span><span class="pln">成立</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+        </span><span class="tag">&lt;p&gt;</span><span class="pln">发布 </span><span class="tag">&lt;time</span><span class="pln"> </span><span class="atn">datetime</span><span class="pun">=</span><span class="atv">"2012-02-15"</span><span class="pln"> </span><span class="atn">pubdate</span><span class="tag">&gt;</span><span class="pln">2012年02月15日</span><span class="tag">&lt;/time&gt;</span><span class="pln"> 分类：前端交流</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/header&gt;</span><span class="pln">
+    </span><span class="tag">&lt;p&gt;</span><span class="pln">你好世界！</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+</span><span class="tag">&lt;/article&gt;</span></pre>
+<figcaption>time示例代码</figcaption>
+</figure>
+</section>
+</section>
+<section>
+<h2 id="2">分组元素标签</h2>
+<p>我们熟悉的div、 p 、dl 、dt、dd、ol、ul、li、hr都是分组元素标签，我们接下来看一些不常用的和新加的分组元素标签</p>
+<ul>
+<li><b>blockquote</b>：标记一段长引文。标记短引文（行内引文），应采用 q 元素！</li>
+<li><b>pre</b>：pre 元素可定义预格式化的文本。被包围在 pre 元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。pre 标签的一个常见应用就是用来表示源代码。他跟code的关系好比blockquote和q的关系。</li>
+</ul>
+<section>
+<h3 id="3">ol元素</h3>
+<p>ol元素在HTML5有改良，增加了两个属性：</p>
+<ol>
+<li>“start”：start属性用来定义列表编号的起始位置，</li>
+<li>“reversed”：reversed属性表示将列表进行反转，但是目前还没有任何一款浏览器对其提供支持，在这里就不细说了。</li>
+</ol>
+</section>
+<section>
+<h3 id="4">figure元素与figcaption元素</h3>
+<p>figure元素用来包含一块独立内容，该内容如果被移除掉不会对周围的内容有影响。具体来说它可以用来表示图片，统计图，图表，音频，视频，代码片段等。如果需要你也可以给该内容添加一个标题，这个标题使用figcaption来表示。figcaption只能作为figure元素的子元素，可以放在figure元素内的任何位置。形如：</p>
+<figure>
+<pre class="prettyprint"><span class="tag">&lt;figure&gt;</span><span class="pln">
+    </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;figcaption&gt;</span><span class="pln">html5jscss前端网是刚建立的小站</span><span class="tag">&lt;/figcaption&gt;</span><span class="pln">
+</span><span class="tag">&lt;/figure&gt;</span></pre>
+</figure>
+<p>不是所有图片都用figure来包裹，img 标签也有语义的。如果纯粹只是为了呈现的图，也不在文档其他地方引用，那就绝对不要用figure。如果和上下文有关，也可以把它移动到附录，那就别用figure，aside可能适合。</p>
+<p>figure元素和aside元素看起来表达的内容差不多，但是aside所能包含的内容比figure要广。当你不知道如何选择的时候可以这样来做：这段内容对周围的内容来说是一个要点，或者很重要，不可少，那么可以使用figure，否则使用aside。</p>
+<p>注意：</p>
+<p>一个figure元素内最多只允许放置一个figcaption元素，也可以不放，但是其他元素可无限放置。注意不是所有图片都得用figure元素。</p>
+</section>
+</section>
+<section>
+<h2 id="5">嵌入元素标签</h2>
+<p>在页面中除了显示文档活字符外，还需要放入一些其他元素，就是我们所说的嵌入元素。</p>
+<p>嵌入元素包括img（图片），页面（iframe），多媒体对象将不再全部绑定在 object 或 embed 标签 中，而是由有 video(视频)audio（音频），用于绘画的 canvas 元素</p>
+<p>这里我们不详细介绍它们的属性了，以后专门介绍。</p>
+</section>
+<p>HTML5中增加了一些表单元素和一些交互元素等新的标签，但是着重点不同，所以我们放在另一片文章来继续了解。HTML5语义标签到此结束。</p>
+<div class="article-bottom"><p>本文源链接：<a rel="bookmark" title="HTML 5的革新——语义化标签(二)" href="http://www.html5jscss.com/html5-semantics-rich.html">http://www.html5jscss.com/html5-semantics-rich.html</a></p><p>转载请注明《<a rel="bookmark" title="HTML 5的革新——语义化标签(二)" href="http://www.html5jscss.com/html5-semantics-rich.html">HTML 5的革新——语义化标签(二)</a>》| <a href="http://www.html5jscss.com/">html5jscss</a></p></div>            </div>
+
+            <aside class="article-aside">
+
+                <div class="article-author">
+                    <img alt="" src="./HTML 5语义化标签(二)_files/2ec5db25e516c37165430293d1395f64" data-original="http://www.html5jscss.com/avatar/2ec5db25e516c37165430293d1395f64" srcset="http://2.gravatar.com/avatar/2ec5db25e516c37165430293d1395f64?s=160&amp;d=mm&amp;r=g 2x" class="avatar" avatar-80="" photo="" height="80" width="80"><noscript>&lt;img alt='' src='http://www.html5jscss.com/avatar/2ec5db25e516c37165430293d1395f64' srcset='http://2.gravatar.com/avatar/2ec5db25e516c37165430293d1395f64?s=160&amp;amp;d=mm&amp;amp;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' /&gt;</noscript>                    <p class="des">一个喜欢看书，喜欢运动，热爱生活，3天coding，2天designing，2天outing，阔步未来的前端工程师，励志成为能写一手漂亮代码的产品经理，因为不懂服务端语言的设计师不是称职的程序员。——小北</p>
+                </div>
+                <div class="article-share">
+                    <article class="share_box"><p>独阅了不如众悦了。。。</p><a class="s-icon s_tsina" title="分享到新浪微博">新浪微博</a><a class="s-icon s_tqq" title="分享到腾讯微博">腾讯微博</a><a class="s-icon s_qzone" title="分享到QQ空间">QQ空间</a><a class="s-icon s_douban" title="分享到豆瓣">豆瓣</a><a class="s-icon s_renren" title="分享到人人网">人人网</a><a class="s-icon s_kaixin" title="分享到开心网">开心网</a><a class="s-icon s_facebook" title="分享到Facebook">Facebook</a><a class="s-icon s_twitter" title="分享到Twitter">Twitter</a></article>                </div>
+
+
+            </aside>
+
+
+
+            <aside class="post-related"><h3 class="base-tit">看过此文章的人还看过</h3><ul class="related-list"><li><a class="thumbnail" href="http://www.html5jscss.com/html5-classlist.html"><img "="" src="./HTML 5语义化标签(二)_files/html5-classlist.jpg" data-original="http://www.html5jscss.com/wp-content/uploads/2012/10/html5-classlist.jpg" alt="HTML 5的革新——HTML5 classList" width="141" height="120"><noscript>&lt;img "src="http://www.html5jscss.com/wp-content/uploads/2012/10/html5-classlist.jpg"  alt="HTML 5的革新——HTML5 classList" width="141" height="120"/&gt;</noscript>HTML 5的革新——HTML5 classList</a></li><li><a class="thumbnail" href="http://www.html5jscss.com/html-5-drag-drop.html"><img src="./HTML 5语义化标签(二)_files/no-has-thumbnail.png" data-original="http://www.html5jscss.com/wp-content/themes/T1/img/no-has-thumbnail.png" alt="HTML 5的革新—— drag &amp;&amp; drop（拖动）" width="141" height="120"><noscript>&lt;img src="http://www.html5jscss.com/wp-content/themes/T1/img/no-has-thumbnail.png"  alt="HTML 5的革新—— drag &amp;&amp; drop（拖动）" width="141" height="120"/&gt;</noscript>HTML 5的革新—— drag &amp;&amp; drop（拖动）</a></li><li><a class="thumbnail" href="http://www.html5jscss.com/html5-semantics-rich.html"><img src="./HTML 5语义化标签(二)_files/no-has-thumbnail.png" data-original="http://www.html5jscss.com/wp-content/themes/T1/img/no-has-thumbnail.png" alt="HTML 5的革新——语义化标签(二)" width="141" height="120"><noscript>&lt;img src="http://www.html5jscss.com/wp-content/themes/T1/img/no-has-thumbnail.png"  alt="HTML 5的革新——语义化标签(二)" width="141" height="120"/&gt;</noscript>HTML 5的革新——语义化标签(二)</a></li><li><a class="thumbnail" href="http://www.html5jscss.com/html5-semantics-section.html"><img "="" src="./HTML 5语义化标签(二)_files/html5-layout.jpg" data-original="/pic/htmljscss/html5-layout.jpg" alt="HTML 5的革新——语义化标签(一)" width="141" height="120"><noscript>&lt;img "src="/pic/htmljscss/html5-layout.jpg"  alt="HTML 5的革新——语义化标签(一)" width="141" height="120"/&gt;</noscript>HTML 5的革新——语义化标签(一)</a></li><li><a class="thumbnail" href="http://www.html5jscss.com/drag-and-drop-to-server.html"><img "="" src="./HTML 5语义化标签(二)_files/dnd-upload.jpg" data-original="/pic/htmljscss/dnd-upload.jpg" alt="拖拽并自动上传至服务器(译)" width="141" height="120"><noscript>&lt;img "src="/pic/htmljscss/dnd-upload.jpg"  alt="拖拽并自动上传至服务器(译)" width="141" height="120"/&gt;</noscript>拖拽并自动上传至服务器(译)</a></li></ul></aside>
+
+            
+
+<!--comment satae-->
+<article id="comments">
+
+
+
+
+    评论关闭了.</article>
+
+        </div>
+		
+	
+		
+	</div>
+
+
+	<aside class="aside">
+
+
+
+
+    <!---->
+    
+
+    
+
+    <!--最新评论 -->
+    
+
+    
+        <!-- 衡天主机 -->
+    <div class="sub-box" style="text-align:center">
+        <a title="衡天主机专业的|wordpress主机" href="http://my.hengtian.org/aff.php?aff=886" target="_blank" rel="external">
+            <img width="300" height="250" src="./HTML 5语义化标签(二)_files/hengtianzhuji.jpg" data-original="http://www.html5jscss.com/pic/others/hengtianzhuji.jpg" alt="衡天主机专业的|wordpress主机"><noscript>&lt;img width="300" height="250" src="http://www.html5jscss.com/pic/others/hengtianzhuji.jpg" alt="衡天主机专业的|wordpress主机"&gt;</noscript>
+        </a>
+    </div>
+    
+        
+    <!--最近热门 -->
+    <aside class="sub-box">
+        <h3>最近热门</h3>
+        <ul class="article-list">
+                    </ul>
+    </aside>
+    
+    <aside class="sub-box">
+        <h3>热门标签&nbsp;&nbsp;.&nbsp;.&nbsp;.&nbsp;&nbsp;<a href="http://www.html5jscss.com/html5-semantics-rich.html" title="所有热门标签" target="_blank">(所有热门标签)</a></h3>
+        <ul class="sub-taglist">
+
+            <li><a href="http://www.html5jscss.com/tag/amd%e8%a7%84%e8%8c%83" title="View all posts in AMD规范">AMD规范</a>x1</li><li><a href="http://www.html5jscss.com/tag/angularjs" title="View all posts in angularJs">angularJs</a>x3</li><li><a href="http://www.html5jscss.com/tag/array" title="View all posts in Array">Array</a>x2</li><li><a href="http://www.html5jscss.com/tag/cookie" title="View all posts in Cookie">Cookie</a>x1</li><li><a href="http://www.html5jscss.com/tag/css-2" title="View all posts in css">css</a>x10</li><li><a href="http://www.html5jscss.com/tag/css3_introduce" title="View all posts in css3详解">css3详解</a>x10</li><li><a href="http://www.html5jscss.com/tag/dom" title="View all posts in DOM">DOM</a>x5</li><li><a href="http://www.html5jscss.com/tag/es5" title="View all posts in ES5">ES5</a>x1</li><li><a href="http://www.html5jscss.com/tag/git" title="View all posts in git">git</a>x1</li><li><a href="http://www.html5jscss.com/tag/github" title="View all posts in github">github</a>x1</li><li><a href="http://www.html5jscss.com/tag/hack" title="View all posts in hack">hack</a>x2</li><li><a href="http://www.html5jscss.com/tag/history" title="View all posts in history">history</a>x1</li><li><a href="http://www.html5jscss.com/tag/html5" title="View all posts in html5">html5</a>x6</li><li><a href="http://www.html5jscss.com/tag/html5_introduce" title="View all posts in html5详解">html5详解</a>x5</li><li><a href="http://www.html5jscss.com/tag/ie" title="View all posts in IE">IE</a>x4</li><li><a href="http://www.html5jscss.com/tag/javascript" title="View all posts in javascript">javascript</a>x3</li><li><a href="http://www.html5jscss.com/tag/javascript_event" title="View all posts in javaScript事件">javaScript事件</a>x3</li><li><a href="http://www.html5jscss.com/tag/javascript_basis" title="View all posts in javaScript基础">javaScript基础</a>x18</li><li><a href="http://www.html5jscss.com/tag/jqurey_plug" title="View all posts in jqurey插件">jqurey插件</a>x1</li><li><a href="http://www.html5jscss.com/tag/js_framework" title="View all posts in JS框架">JS框架</a>x1</li><li><a href="http://www.html5jscss.com/tag/js_analysis" title="View all posts in js解析">js解析</a>x5</li><li><a href="http://www.html5jscss.com/tag/meta%e5%b1%9e%e6%80%a7" title="View all posts in meta属性">meta属性</a>x1</li><li><a href="http://www.html5jscss.com/tag/notepad" title="View all posts in Notepad++">Notepad++</a>x1</li><li><a href="http://www.html5jscss.com/tag/sass" title="View all posts in sass">sass</a>x1</li>        </ul>
+    </aside>
+
+
+
+   
+    
+
+
+</aside>
+
+
+</article>
+
+<footer id="footer">
+    <div class="bottom-warp clearfix">
+        <small>
+        html5jscss. Powered by <a href="http://www.wordpress.org/" rel="external">WordPress</a>.
+         Theme by <a href="http://html5jscss.com/" rel="external">小北</a>.
+                    <a href="http://www.miitbeian.gov.cn/" rel="external">国外主机，省去备案烦恼</a>
+          .                             </small>
+        <ul id="bottom_nav" class="bottom-nav"><li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="http://www.html5jscss.com/about-us">关于</a></li>
+<li id="menu-item-302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-302"><a href="http://www.html5jscss.com/tools-list">前端工具集合</a></li>
+</ul>    </div>
+<script src="./HTML 5语义化标签(二)_files/jquery.min.js.下载"></script>
+<script type="text/javascript">
+//<![CDATA[
+if(typeof(jQuery)==="undefined") {
+  document.write(decodeURI('<script src="http://www.html5jscss.com/wp-content/themes/T1/js/jqurey.min.js"><\/script>'));
+}
+//]]>
+</script>
+<script src="./HTML 5语义化标签(二)_files/index.js.下载"></script>
+<script src="./HTML 5语义化标签(二)_files/prettify.js.下载"></script>
+<script src="./HTML 5语义化标签(二)_files/article.js.下载"></script>
+
+</footer>
+<div style="display:none">
+  <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F89b86543a2dd1540a26cd10efa3089ac' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./HTML 5语义化标签(二)_files/h.js.下载" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=89b86543a2dd1540a26cd10efa3089ac" target="_blank">网站统计</a>
+</div>
+
+
+</body></html>
