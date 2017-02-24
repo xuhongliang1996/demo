@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自定义checkbox， radio样式</title>
+	<link rel="stylesheet" type="text/css" href="styles/task1.css">
+</head>
+<body>
+<form>
+<div class="style1">
+	<h2>伪元素方式</h2>
+	<input type="radio" name="demo1"></input>
+	<input type="radio" name="demo1" checked="checked"></input>
+	<input type="checkbox" name="demo2">
+	<input type="checkbox" name="demo2" checked="checked"></input>
+	<br />
+	<br />
+</div>
+
+<div class="style2">
+	<h2>雪碧图方式</h2>
+	<label>
+		<input type="radio" name="demo3" class="radio1"></input>
+		<div class="option1"></div>
+	</label>
+
+	<label>
+		<input type="radio" name="demo3" class="radio2" checked="checked"></input>
+		<div class="option2"></div>
+	</label>
+
+	<label>
+		<input type="checkbox" name="demo4" class="checkbox1"></input>
+		<div class="option3"></div>
+	</label>
+
+	<label>
+		<input type="checkbox" name="demo5" class="checkbox2"  checked="checked"></input>
+		<div class="option4"></div>
+	</label>
+</div>
+</form>
+</body>
+</html>

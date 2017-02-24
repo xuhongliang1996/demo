@@ -1,0 +1,149 @@
+body{
+    background: black;
+}
+h2{
+	color:#fff;
+}
+/*******************style1*********************/
+/*******************radio************************/
+.style1 input[type=radio] {
+  position: relative;
+  width: 40px;
+  height: 0px;
+}
+.style1 input[type=radio]::before,
+.style1 input[type=radio]::after {
+  position: absolute;
+  display: block;
+  content: '';
+  border-radius: 50%;
+  transition: .3s ease;
+}
+.style1 input[type=radio]::before {
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #DADADA;
+}
+.style1 input[type=radio]::after {
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+}
+.style1 input[type=radio]:checked::before {
+  border-color: #D83B2F;
+}
+.style1 input[type=radio]:checked::after {
+  background-color: #D83B2F;
+}
+
+/*****************checkbox*****************************/
+.style1 input[type=checkbox] {
+  position: relative;
+  width: 40px;
+  height: 0px;
+}
+.style1 input[type=checkbox]::before,
+.style1 input[type=checkbox]::after {
+  position: absolute;
+  display: block;
+  content: '';
+  border-radius: 10%;
+  transition: .3s ease;
+}
+.style1 input[type=checkbox]::before {
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #DADADA;
+}
+.style1 input[type=checkbox]::after {
+  top: 4px;
+  left: 3px;
+  width: 6px;
+  height: 3px;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+  background-color: transparent;
+  transform: rotate(-50deg);
+}
+.style1 input[type=checkbox]:checked::before {
+  border-color: #D83B2F;
+}
+.style1 input[type=checkbox]:checked::after {
+  border-color: #D83B2F;
+}
+
+
+/*******************style2*********************/
+
+label {                 		/*设置label样式*/
+	width: 46px;
+	padding-left: 5px;
+	display: block;
+	float: left;
+}
+.style2 .radio1 {
+	position: relative;
+	width: 40px;
+	height: 0px;
+}
+
+.option1 {      			/*把定位后的按钮图片设置为该div的背景图片，遮盖住原生样式。*/
+	width:16px;
+    height:16px;
+    background:transparent url(../images/task1.png) no-repeat scroll -24px -10px;
+}
+
+.radio1:checked+div {  	    /*当radiuo被选中时，把input下边的div标签的背景图片替换掉*/
+	background:transparent url(../images/task1.png) no-repeat scroll -59px -10px;
+}
+
+.style2 .radio2 {
+	position: relative;
+	width: 40px;
+	height: 0px;
+}
+
+.option2 {
+	width:16px;
+    height:16px;
+    background:transparent url(../images/task1.png) no-repeat scroll -24px -10px;
+}
+
+.radio2:checked+div {
+	background:transparent url(../images/task1.png) no-repeat scroll -59px -10px;
+}
+
+.style2 .checkbox1 {
+	position: relative;
+	width: 40px;
+	height: 0px;
+}
+
+.option3 {
+	width:16px;
+    height:16px;
+    background:transparent url(../images/task1.png) no-repeat scroll -24px -32px;
+}
+.checkbox1:checked+div {
+	background:transparent url(../images/task1.png) no-repeat scroll -59px -31px;
+}
+.style2 .checkbox2 {
+	position: relative;
+	width: 40px;
+	height: 0px;
+}
+
+.option4 {
+	width:16px;
+    height:16px;
+    background:transparent url(../images/task1.png) no-repeat scroll -24px -32px;
+}
+.checkbox2:checked+div {
+	background:transparent url(../images/task1.png) no-repeat scroll -59px -31px;
+}
