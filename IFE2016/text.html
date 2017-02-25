@@ -1,96 +1,11 @@
-
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>自定义网页右键菜单</title>
-  <style type="text/css">
-    body, div, p, ul, li {
-      margin: 0;
-      padding: 0;
-    }
-    .block {
-      background: #F5F5F5;
-      margin-top: 20px;
-      width: auto;
-      height: 80px;
-      border: 1px solid #E3E3E3;
-      border-radius: 10px;
-    }
-    .block p {
-      font-size: 2em;
-      font-family: 'Verdana, Geneva, Arial, Helvetica, sans-serif';
-      margin: 16px;
-    }
-    .menustyle {
-      background: #F0F8FF;
-      list-style: none;
-      width: 200px;
-      height: auto;
-      border: 1px solid #E3E3E3;
-      border-radius: 10px;
-      position: absolute;
-      display: none;
-    }
-    .menustyle li {
-      font-size: 1.5em;
-      font-family: 'Verdana, Geneva, Arial, Helvetica, sans-serif';
-      text-align: center;
-            cursor: pointer;
-    }
-    .menustyle li:hover{
-            background-color: #CCC;
-        }
-  </style>
-</head>
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="text.css">
+  <script type="text/javascript" src="a.js"></script>
 <body>
-  <div id="div" class="block">
-    <p>right click to see the menus.</p>
-  </div>
-  <ul id="menu" class="menustyle">
-    <li>Menu Item1</li>
-    <li>Menu Item2</li>
-  </ul>
-  <script type="text/javascript">
-  /*
-  了解js中的oncontextmenu事件
-  了解如何获取鼠标位置
-  了解如何实现页面屏蔽右键菜单
-  */
-  function rightClick(element, type, handler) {
-    if(element.addEventListener){
-      element.addEventListener(type, handler, false);
-    }else{
-      element.attachEvent('on' + type, handler);
-    }
-  }
-  function preventDefault(e) {
-    e = event || window.event;
-    if(e.preventDefault){
-      e.preventDefault();
-    }else{
-      e.returnValue = false;
-    }
-  }
-  window.onload = function(e) {
-    var div = document.getElementById('div');
-    var menu = document.getElementById('menu');
-    rightClick(div, 'contextmenu', function(e) {
-      e = event || window.event;
-      e.preventDefault();
-      menu.style.display = 'block';
-      menu.style.top = e.clientY + 'px';
-      menu.style.left = e.clientX + 'px';
-    });
-    rightClick(menu, 'contextmenu', function(e) {
-      e = event || window.event;
-      e.preventDefault();
-    });
-    rightClick(document, 'mousedown', function(e){
-      e = event || window.event;
-      e.preventDefault();
-        menu.style.display = 'none';
-    });
-  }
-  </script>
+<div>文本内容</div> 
 </body>
+</html>
