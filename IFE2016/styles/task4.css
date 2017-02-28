@@ -1,0 +1,30 @@
+.bor{
+	width: 400px;
+	height: 200px;
+	background-color: #CCCCCC;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.shanxing1{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    background-color: yellow;
+    clip:rect(0px,50px,50px,0px);
+}
+.shanxing2{
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: yellow;
+    clip:rect(0px,50px,50px,0px);
+}
