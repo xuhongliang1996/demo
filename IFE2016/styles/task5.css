@@ -1,0 +1,188 @@
+/**********整体***********/
+*{
+    margin:0;padding:0;
+}
+body{
+    font-family:'Microsoft YaHei';
+    background:#dedede;
+}
+/***********头部***********/
+header{
+    position:relative;
+    height:60px;
+    background:#333;
+    width: 100%;
+}
+header div img{
+    padding-left:20px;
+    height:58px;
+}
+header ul{
+    position:absolute;
+    top: 0;
+    right: 10px;
+    height: 60px;
+}
+header ul li{
+	height: 60px;
+	float: left;
+	margin:0 10px 0 17px;
+}
+header ul li div{
+	padding-top: 17px;
+}
+header ul li a{
+	color:white;
+	font-size: 8px;
+	text-decoration:none;
+	
+}
+header ul li:last-child div a{
+	color:#9AA8AB;
+}
+header ul li:hover{
+	border-bottom: 1px solid red;
+    background: #474747;
+	border-radius: 3px;
+
+}
+/***********主体***********/
+main{
+	margin: 0 410px 0 0;
+}
+article, aside{
+	display:block;
+	margin:20px;
+	padding:35px 20px;
+	background: #ffffff;
+	box-shadow:1px 1px 2px 1px #848484;
+}
+article h2{
+	padding:5px 0;
+
+}
+article h3{
+	padding:10px 0;
+    color:#808080;
+    font-size: 17px;
+}
+article:not(:nth-last-child(2)) span{
+	color: #808080;
+	font-size: 14px;
+	line-height: 40px;
+}
+article a{
+    color:blue;
+}
+article a:hover{
+    color:red;
+}
+article p{
+    text-indent:2em;
+    line-height: 170%;
+}
+article img{
+	width: 300px;
+	padding: 20px 0;
+}
+article ul li{
+	list-style-type:none;/*去掉li的点样式*/
+}
+article dl dd{
+	display: inline-block;
+	width: 122px;
+	height: 126px;
+	border:1px solid #ccc;
+	margin:20px 50px;
+}
+article dl dd span{
+    display:block;
+    font-size:12px;
+    text-align:center;
+    margin:8px;
+}
+article dl dd img{
+	width: 102px;
+	height: 83px;
+	padding: 0 10px 10px 10px
+}
+article ol{
+    margin: 10px 40px;
+}
+article table{
+    width:100%;
+    border-collapse: collapse;/*设置表格的边框被合并为一个单一的边框*/
+    border:1px solid #ccc;
+    font-size: 10px;
+    text-align: left;
+}
+article table tr th{
+    color:white;
+    background:#333;
+   
+}
+article table .buttomTable{
+    background:#ccc;
+}
+article table tr th,
+article table tr td{
+	padding:5px;
+}
+/***********侧栏***********/
+aside {
+	position: absolute;
+	top: 60px;
+	right: 0;
+	width: 350px;
+
+}
+aside h4{
+	border-left: 3px solid #CCC;
+	padding-left: 12px;
+	line-height: 35px;
+}
+aside form div {
+    font-size: 12px;
+    margin:20px 0;
+}
+aside form div .ship{
+	text-align:right;
+	float: left;
+	padding-right: 20px;
+	width: 28%
+}
+aside form div p{
+	padding:10px 0 0 29.8%;
+	color: #87949C
+}
+aside textarea{
+    width:50%;
+    height:100px;
+
+}
+aside .submitButton{
+    width:100%;
+    height:40px;
+    border-radius: 10px;/*圆角*/
+    background: #0378E2;
+    color: white;
+    font-size: 19px;
+    border:none;
+}
+aside .submitButton:hover{
+    background: #0063dc;
+
+}
+aside{
+	padding-bottom: 10px;
+}
+/***********尾部***********/
+footer{
+	height: 50px;
+	width: 100%;
+	background: black;
+	font-size: 5px;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+}
