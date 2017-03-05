@@ -108,6 +108,7 @@ main{
 	transform: skew(-10deg) ;
 	font-weight: bold;
 	margin-left: -10px;
+	margin-bottom: -14px;
 }
 .content1_2-3{
 	font:55px '微软雅黑';
@@ -118,11 +119,11 @@ main{
 	color: #cc8091;
 	position: absolute;
 	left: 83px;
-	bottom: -4px;
+	bottom: 8px;
 }
 .content1_2-css{
 	font:12px '微软雅黑';
-	color: #cc8091;
+	color: #D1D1D1;
 }
 /************t2**************/
 .title2 div{
