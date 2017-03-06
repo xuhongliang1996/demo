@@ -1,0 +1,39 @@
+/**********居中容器**************/
+.public-container{
+	position: relative;
+	margin: 0 auto;
+	width: 1100px;
+}
+
+.public-header{
+	height: 56px;
+
+}
+.public-header .header-logo{
+	float: left;
+	width: 200px;
+	height: 31px;
+	background: url(../images/index-header-logo.png) no-repeat scroll;
+}
+.public-header .header-logo .name{
+	font:21px "黑体";
+	color: #393a3a;
+	line-height: 31px;
+	margin-left: 42px;
+}
+.public-header .header-nav{
+	float: right;
+}
+.public-header .header-nav .item{
+	float: left;
+}
+.public-header .header-nav .header-loginbar{
+	float: left;
+}
+.public-header .header-nav .header-loginbar .name{
+
+}
+
+.public-footer{
+	height: 58px;
+}
