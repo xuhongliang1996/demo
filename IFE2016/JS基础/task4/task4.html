@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>04 基础JavaScript练习（一）</title>
+	<style type="text/css">
+		body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+			margin: 0;
+			padding: 0;
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		}
+		ol,ul,li{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+			display: block;
+		}
+		.main{
+			width: 500px;
+			height: 200px;
+			margin: 150px auto;
+		}
+		ul{
+			text-align: center;
+		}
+		li{
+			float: left;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			margin: 5px 2px;
+			background: #FF090A;
+			color:#FFD5D6;
+		}
+		#left-into{
+			margin-left: 10px;
+		}
+		#left-out{
+			margin-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="header">
+			<input type="text" name="" id="msg" />
+			<button id="left-into">左侧入</button>
+			<button id="right-into">右侧入</button>
+			<button id="left-out">左侧出</button>
+			<button id="right-out">右侧出</button>
+		</div>
+		<div class="footer">
+			<ul id="addele">
+				<li>10</li>
+				<li>3</li>
+				<li>7</li>
+				<li>12</li>
+				<li>11</li>
+				<li>30</li>
+			</ul>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript">
+		var leftinto = document.getElementById('left-into');
+		var rightinto = document.getElementById('right-into');
+		var leftout = document.getElementById('left-out');
+		var rightout = document.getElementById('right-out');
+		var msg = document.getElementById('msg');
+		var addele = document.getElementById('addele');
+		(function(){
+			leftinto.onclick=function(){
+				if(msg.value!=""){
+					var li = document.createElement('li');
+					li.innerHTML = msg.value;
+					addele.insertBefore(li,addele.childNodes[0]);
+					
+				}
+			}
+			rightinto.onclick=function(){
+				if(msg.value!=""){
+					var li = document.createElement('li');
+					li.innerHTML = msg.value;
+					addele.appendChild(li);
+				}
+			}
+			leftout.onclick=function(){
+				if(addele.firstChild!=null){
+					console.log(addele.firstChild.nodeType);
+					if(addele.firstChild.nodeType!=1){//文本的nodeType值是3
+						addele.removeChild(addele.firstChild);
+					}
+					addele.removeChild(addele.firstChild);
+				}
+			}
+			rightout.onclick=function(){
+				if(addele.firstChild!=null){
+					console.log(addele.firstChild.nodeType);
+					if(addele.lastChild.nodeType!=1){//文本的nodeType值是3
+						addele.removeChild(addele.lastChild);
+					}
+					addele.removeChild(addele.lastChild);
+				}
+			}
+		})()
+	</script>
+</html>
