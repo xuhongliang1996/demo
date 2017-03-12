@@ -2,9 +2,10 @@
 .public-container{
 	position: relative;
 	margin: 0 auto;
-	width: 1100px;
+	width: 1280px;
 }
 
+/**********头部*********************/
 .public-header{
 	height: 56px;
 
@@ -27,13 +28,18 @@
 .public-header .header-nav .item{
 	float: left;
 }
+.public-header .header-nav .item a{
+	font:14px '微软雅黑';
+	display: inline-block;
+	width: 65px;
+}
 .public-header .header-nav .header-loginbar{
 	float: left;
 }
 .public-header .header-nav .header-loginbar .name{
-
+	font:14px '微软雅黑';
 }
-
+/***********尾部**********************/
 .public-footer{
 	height: 58px;
 }

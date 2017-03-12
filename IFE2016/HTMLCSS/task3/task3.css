@@ -37,10 +37,12 @@ img{
 .left h2 {
   font-size: 15px;
 }
-.logo.last {/*没有空格标识一个引用了两个class的标签*/
-  margin-bottom: 0;
+
+.logo.last {/*没有空格表示一个引用了这两个类的标签（放在那里最终显示都以他为准）*/
+  margin-bottom: 0px;
 }
-.left .logo {/*有空格第一个class的子孙生效*/
+
+.left .logo {/*有空格第一个类的子孙类生效*/
   float: left;
 }
 /**********右边**************/

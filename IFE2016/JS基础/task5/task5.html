@@ -199,7 +199,7 @@ g("btns").onclick=function(event){
         }
     },50);
 
-}
+};
 
 //验证输入的文本
 g("numInput").onblur=function(){
@@ -212,47 +212,47 @@ g("numInput").onblur=function(){
             g("tips").innerHTML="输入的数字过大!";
             g("tips").className="warn";
         }else{
-            g("tips").innerHTML="( •̀ .̫ •́ )✧"
+            g("tips").innerHTML="( •̀ .̫ •́ )✧";
             g("tips").className="normal";
         }
     }else{
-        g("tips").innerHTML="请输入整数!"
+        g("tips").innerHTML="请输入整数!";
         g("tips").className="warn";
     }
-}
+};
 //从左侧添加数据
 g("leftIn").onclick=function(){
     var inputValue = g("numInput").value;
     if(/^\d{1,}$/g.test(inputValue) && parseInt(inputValue)>=10 && parseInt(inputValue)<=100){
         var num = parseInt(inputValue);
-        data.unshift(num)
+        data.unshift(num);
         showData(data);
     }
-}
+};
 //从右侧添加数据
 g("rightIn").onclick=function(){
     var inputValue = g("numInput").value;
     if(/^\d{1,}$/g.test(inputValue) && parseInt(inputValue)>=10 && parseInt(inputValue)<=100){
         var num = parseInt(inputValue);
-        data.push(num)
+        data.push(num);
         showData(data);
     }
-}
+};
 //从左侧移除数据
 g("leftOut").onclick=function(){
     data.shift();
     showData(data);
-}
+};
 //从右侧移除数据
 g("rigtOut").onclick=function(){
     data.pop();
     showData(data);
-}
+};
 //生成数据数组
 g("randomArr").onclick=function(){
     buildData();
     showData(data);
-}
+};
 
 window.onload = function(){
     buildData();
