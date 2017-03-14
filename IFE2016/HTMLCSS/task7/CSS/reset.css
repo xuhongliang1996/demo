@@ -14,13 +14,15 @@ img{
 	border: none;
 	display: block;
 }
-.clearfloat{
-	zoom:1;
-}
-.clearfloat:after{
-	display: block;
-	clear:both;
+
+.clearfloat:before,
+.clearfloat:after {
 	content: "";
-	visibility: hidden;
-	height: 0;
+	display: table;
+}
+.clearfloat:after {
+	clear: both;
+}
+.clearfloat {
+	*zoom: 1;
 }

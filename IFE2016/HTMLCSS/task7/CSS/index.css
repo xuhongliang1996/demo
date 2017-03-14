@@ -1,0 +1,106 @@
+/*************public-banner**************************/
+.public-banner{
+    height:690px;
+    background: url(../images/public-banner.png);
+    background-size: 100% auto;
+    position: relative;
+}
+.banner-section{
+    position: absolute;
+    top: 214px;
+    left:118px;
+}
+.public-banner .banner-msg1{
+    font:60px '微软雅黑';
+    color: #ffffff;
+}
+.public-banner .banner-msg2{
+    font:21px '微软雅黑';
+    color: #fffdfd;
+    margin: 20px 0 60px 8px;
+    line-height:37px;
+}
+.public-banner .banner-btn{
+    width: 330px;
+    height:65px;
+    margin-left: 10px;
+    background: #e74f4d;
+    font:30px '微软雅黑';
+    color: #ffffff;
+    line-height:37px;
+    border:none;
+}
+/**************public-list*************************/
+.public-list{
+    width:100%;
+    height: 250px;
+    font-size: 0;
+    margin-right: -20px;
+    overflow: hidden;
+}
+.public-list .list-wrapper{
+    display:inline-block;
+    vertical-align: top;
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    /*background-clip: content-box;//背景只对宽高生效*/
+}
+.public-list .icon{
+    margin:44px 0;
+}
+.public-list .icon span{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+}
+.public-list .icon1{
+    background: url(../images/list-icon.png) no-repeat 0px 0px;
+}
+.public-list .icon .icon2{
+    background: url(../images/list-icon.png) no-repeat 0px -42px;
+}
+.public-list .icon .icon3{
+    background: url(../images/list-icon.png) no-repeat -42px 0px;
+}
+.public-list .icon .icon4{
+    background: url(../images/list-icon.png) no-repeat -42px -42px;
+}
+.public-list .msg{
+    width:100%;
+    height:52px;
+    text-align: center;
+    border-right: 2px solid #bbbbbb;//最后一个border-right由于超出会被裁剪不会显示
+}
+.public-list .msg p{
+    display: inline-block;
+    font:14px '黑体';
+    color: #767777;
+    width: 154px;
+}
+/*****************public-msg**********************/
+.public-msg{
+    background: #edecec;
+    text-align: center;
+    height: 360px;
+}
+.public-msg .msg-logo{
+    display: inline-block;
+    width: 91px;
+    height: 92px;
+    margin: 90px 0 34px 0;
+    background: url(../images/msg-logo.png);
+}
+.public-msg .msg{
+    display: inline-block;
+    font:54px '黑体';
+    color: #323333;
+    opacity:0.5;
+}
+/***************************************/
+/***************************************/
+/***************************************/
+/***************************************/
+/***************************************/
+/***************************************/

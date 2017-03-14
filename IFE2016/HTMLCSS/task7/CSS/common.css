@@ -4,16 +4,19 @@
 	margin: 0 auto;
 	width: 1280px;
 }
-
+body{
+	min-width: 1280px;//这个宽度为页面的最小宽度
+}
 /**********头部*********************/
 .public-header{
 	height: 56px;
-
 }
 .public-header .header-logo{
 	float: left;
 	width: 200px;
 	height: 31px;
+	margin-left: 59px;
+	margin-top: 13px;
 	background: url(../images/index-header-logo.png) no-repeat scroll;
 }
 .public-header .header-logo .name{
@@ -24,22 +27,61 @@
 }
 .public-header .header-nav{
 	float: right;
+	margin-right: 67px;
 }
 .public-header .header-nav .item{
 	float: left;
+	height: 56px;
+	margin: 0 20px;
+	text-align: center;
 }
 .public-header .header-nav .item a{
 	font:14px '微软雅黑';
+	color: #787b83;
 	display: inline-block;
 	width: 65px;
+	height: 52px;
+	line-height: 50px;
 }
+.public-header .header-nav .item a:hover{
+	border-bottom: 4px solid #eb5755;
+	color: #e74f4d;
+}
+
 .public-header .header-nav .header-loginbar{
 	float: left;
+	margin-left: 8px;
+	width: 47px;
+	height:52px;
+	background: url(../images/loginbar.png) no-repeat scroll;
+	background-position:0 17px;
 }
 .public-header .header-nav .header-loginbar .name{
 	font:14px '微软雅黑';
+	color: #e74f4d;
+	margin-left: 19px;
+	line-height: 50px;
 }
 /***********尾部**********************/
 .public-footer{
+	background: #2f2f38;
+}
+.public-footer .public-container{
+	position: relative;
 	height: 58px;
+}
+.public-footer .footer-msg{
+	font:12px '宋体';
+	position: absolute;
+	left: 100px;
+	bottom:16px;
+}
+.public-footer .footer-gotop{
+	font:12px '宋体';
+	position: absolute;
+	right:40px;
+	bottom:15px;
+}
+.public-footer a{
+	color:#FFFFFF;
 }
