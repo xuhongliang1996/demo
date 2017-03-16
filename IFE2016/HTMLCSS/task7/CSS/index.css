@@ -35,14 +35,11 @@
     width:100%;
     height: 250px;
     font-size: 0;
-    margin-right: -20px;
     overflow: hidden;
 }
 .public-list .list-wrapper{
     display:inline-block;
-    vertical-align: top;
     width: 25%;
-    box-sizing: border-box;
     text-align: center;
     /*background-clip: content-box;//背景只对宽高生效*/
 }
@@ -98,9 +95,469 @@
     color: #323333;
     opacity:0.5;
 }
-/***************************************/
-/***************************************/
-/***************************************/
-/***************************************/
-/***************************************/
-/***************************************/
+/**************public-search*************************/
+.public-search{
+    height: 340px;
+    background: url(../images/search-bg.png) no-repeat;
+    background-size: 100% auto;
+}
+.public-search .search-msg{
+    text-align: center;
+    padding-top: 50px;
+}
+.public-search .search-msg1{
+    font:21px '微软雅黑';
+    color: #ffffff;
+    margin-bottom: -2px;
+}
+/*用hr标签效果不好，不能很好的进行margin调整*/
+.public-search .sezrch-hr{
+    border: none;
+    width: 31px;
+    height: 2px;
+    background: #ffffff;
+}
+.public-search .search-msg2{
+    font:12px '微软雅黑';
+    color: #ffffff;
+    opacity: 0.8;
+    margin-top: 14px;
+    margin-bottom: 45px;
+}
+.public-search .search-input{
+    position: relative;
+    width: 1280px;
+    text-align: center;
+}
+.public-search .select{
+    width: 236px;
+    height: 36px;
+    box-sizing: border-box;
+    margin-right: 30px;
+    padding-left: 12px;
+    font:12px '微软雅黑';
+    background-image: url(../images/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: 210px center;
+    border:none;
+}
+.public-search .select:nth-of-type(2){
+    border:1px solid #c16a63;
+}
+.public-search .submit{
+    width: 236px;
+    height: 36px;
+    background: #be4e48;
+    border:none;
+    font:14px '微软雅黑';
+    color: #fff;
+}
+.public-search .select-lise{
+    width: 236px;
+    height: 171px;
+    box-sizing: border-box;
+    margin-top:-1px;
+    border: 1px solid #bd6f66;
+    background-color: #e3e3e5;
+    position: absolute;
+    left: 386px;
+}
+.public-search .select-lise li{
+    font: 12px '微软雅黑';
+    color: #323333;
+    line-height:26px;
+    text-align: left;
+    padding-left: 32px;
+}
+.public-search .select-lise li:hover{
+    color: #323333;
+    line-height:26px;
+    background-color: #be4f48;
+    background-image: url(../images/select-lise-icon.png);
+    background-repeat: no-repeat;
+    background-position: 8px center;
+}
+/****************public-content1***********************/
+.public-content1{
+    height: 604px;
+    text-align: center;
+    background-color: #f7f7f7;
+    font-size:0;
+}
+.public-content1 .pic-content{
+    display: inline-block;
+    margin: 100px 24px 114px;
+    font-size: 12px;
+    vertical-align:top;
+}
+.public-content1 .content-pic{
+    width: 218px;
+    height: 336px;
+    border-top: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+    background-color: #ffffff;
+}
+.public-content1 .pic{
+    padding:12px 8px;
+}
+.public-content1 .ms1{
+    font: 14px '微软雅黑';
+    color: #44403F;
+    margin: 12px 0 6px 0;
+}
+.public-content1 .ms1-sh{
+    font-size: 20px;
+    text-indent: 30px;
+    letter-spacing: 30px;
+    margin: 0 0 4px 0;
+}
+.public-content1 .ms2{
+    font: 12px '微软雅黑';
+    color: #B3AFAC;
+}
+.public-content1 .ms2-sh{
+    margin-bottom:6px;
+}
+/**************public-content2*************************/
+.public-content2{
+    height: 566px;
+
+}
+.public-content2 .content2-left{
+    height: 566px;
+    float: left;
+    width: 66.5%;
+    background: url(../images/content2-bg.png) no-repeat;
+    background-size: 100% auto;
+    position: relative;
+    text-align: center;
+
+}
+.public-content2 .content2-left::after{
+    content: '';
+    border-width: 15px 24px;
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+    position: absolute;
+    top: 250px;
+    right: 0;
+}
+.public-content2 .left-new{
+    font: 50px '微软雅黑';
+    color: #fff;
+    margin-top: 120px;
+}
+.public-content2 .left-time{
+    font: 158px '微软雅黑';
+    color: #fff;
+    line-height: 150px;
+    margin-bottom: 20px;
+}
+.public-content2 .left-addwrapper{
+    width: 156px;
+    margin: 0 auto;
+    text-align: left;
+}
+.public-content2 .left-add{
+    font: 22px '微软雅黑';
+    color: #fff;
+    line-height: 44px;
+}
+
+.public-content2 .content2-right{
+    float: right;
+    width: 33.5%;
+    text-align: center;
+}
+.public-content2 .title-container{
+    height: 30px;
+    width: 103px;
+    margin: 0 auto;
+    margin-top: 164px;
+    margin-bottom: 12px;
+}
+.public-content2 .msg{
+    width: 288px;
+    font:12px '宋体';
+    color: #aaaaaa;
+    line-height:32px;
+    text-align: left;
+    margin: 0 auto;
+
+}
+.public-content2 .more{
+    width: 104px;
+    height: 32px;
+    margin: 0 auto;
+    border: 1px solid #e4666a;
+    margin-top: 38px;
+    margin-bottom: 22px;
+}
+.public-content2 .more a{
+    font: 12px '微软雅黑';
+    color: #e25c60;
+    padding-top: 8px;
+}
+.public-content2 .icon{
+    display: inline-block;
+    width:11px;
+    height: 12px;
+}
+.public-content2 .icon{
+    background: url(../images/content2-icon.png) no-repeat -11px 0;
+}
+.public-content2 .icon.active{
+    background: url(../images/content2-icon.png) no-repeat 0 0;
+}
+/***************public-content3************************/
+.public-content3 .warpper{
+    float: left;
+    width: 66.5%;
+    text-align: center;
+}
+.public-content3 .left{
+    float: left;
+    width: 50%;
+    height: 521px;
+    background-color: #e7504d;
+    color:#fff;
+}
+.public-content3 .new{
+    font:21px '黑体';
+    line-height: 30px;
+    margin-top: 170px;
+    margin-bottom: 18px;
+}
+.public-content3 .hr{
+    display: block;
+    width: 30px;
+    border-bottom: 2px solid;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+.public-content3 .more{
+    width: 166px;
+    height: 40px;
+    border: 1px solid;
+    margin: 0 auto;
+}
+.public-content3 .more a{
+    font:21px '黑体';
+    color: #fff;
+    line-height: 40px;
+}
+.public-content3 .more.color2 a{
+    color: #e74f4d;
+}
+.public-content3 .right{
+    float: right;
+    width: 50%;
+    height: 521px;
+    color:#323333;
+}
+.public-content3 .color1{
+    color: #fff;
+}
+.public-content3 .color2{
+    color: #e74f4d;
+}
+.public-content3 .color3{
+    color:#aaaaaa;
+}
+.public-content3 .pic-container{
+    float: right;
+    width: 33.5%;
+    height: 521px;
+    background: url(../images/content3-pic.png) no-repeat;
+    background-size: 100% auto;
+    position: relative;
+}
+.public-content3 .pic-container::after{
+    content: '';
+    border-width: 15px 24px;
+    border-color: transparent transparent  transparent #fff;
+    border-style: solid;
+    position: absolute;
+    top: 250px;
+    left: 0;
+}
+/******************public-joinus*********************/
+.public-joinus{
+    height: 632px;
+}
+
+.public-joinus .top{
+    height: 182px;
+    width: 420px;
+    text-align: center;
+    margin: 0 auto;
+}
+.public-joinus .top-h2{
+    font:21px '黑体';
+    color: #323333;
+    margin-top: 118px;
+    margin-bottom: 10px;
+}
+.public-joinus .top-hr{
+    width: 30px;
+    height: 2px;
+    border: none;
+    background: #e74f4d;
+}
+.public-joinus .top-msg{
+    font: 12px '微软雅黑';
+    color: #aaaaaa;
+    margin-top: 10px;
+}
+
+.public-joinus .left{
+    width: 290px;
+    height: 300px;
+    float: left;
+    margin-left: 140px;
+}
+.public-joinus .left-t{
+    font: 14px '黑体';
+    color: #231815;
+    line-height: 20px;
+}
+.public-joinus .left-msg{
+    font: 12px '宋体';
+    color: #231815;
+    opacity: 0.6;
+    line-height: 24px;
+}
+.public-joinus .left-icon{
+    font: 12px '宋体';
+    color: #231815;
+    opacity: 0.6;
+    float: right;
+    padding-left: 18px;
+    background: url(../images/joinus-icon.png) no-repeat;
+    background-position: 0px 6px;
+}
+
+.public-joinus .right{
+    width: 660px;
+    height: 300px;
+    float: right;
+    margin-right: 120px;
+}
+.public-joinus .warpper{
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+    margin-bottom: 13px;
+}
+.public-joinus .lable{
+    font:12px '宋体';
+    color: #231815;
+    opacity: 0.8;
+    position: absolute;
+    top: 14px;
+    left:14px;
+}
+.public-joinus .msg{
+    font:12px '宋体';
+    color: #231815;
+    opacity:0.8;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.public-joinus input[type="text"]{
+    width: 310px;
+    height: 40px;
+    border: none;
+    background-color: #ededef;
+    box-sizing: border-box;
+    padding-left: 68px;
+}
+.public-joinus textarea{
+    width: 640px;
+    height: 120px;
+    border: none;
+    resize: none;
+    background-color: #ededef;
+    box-sizing: border-box;
+    padding-left: 160px;
+    padding-top: 8px;
+}
+.public-joinus input[type="submit"]{
+    width: 640px;
+    height: 40px;
+    border: none;
+    font:14px '黑体';
+    color: #323333;
+    background-color: #ededef;
+}
+/***************public-contactus************************/
+.public-contactus{
+    height: 360px;
+    background-color: #32353e;
+    text-align: center;
+}
+.public-contactus .msg-war{
+    width: 100%;
+    height: 120px;
+    display: inline-block;
+    margin-top: 80px;
+}
+.public-contactus .contect{
+    font:21px '黑体';
+    color:#fff;
+    margin:10px 0;
+}
+.public-contactus .msg{
+    font:12px '宋体';
+    color:#fff;
+    line-height: 20px;
+}
+
+.public-contactus .input-war{
+    font-size: 0;
+}
+.public-contactus .text{
+    width: 430px;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding-left: 10px;
+    vertical-align:middle
+}
+.public-contactus .submit{
+    width: 80px;
+    height: 40px;
+    box-sizing: border-box;
+    border:0;
+    font:16px '微软雅黑';
+    color:#fff;
+    letter-spacing: 5px;
+    background: #707378;
+    vertical-align:middle
+}
+.public-contactus .icon{
+    margin-top: 34px;
+}
+.public-contactus .icon span{
+    display: inline-block;
+    height: 25px;
+    margin:0 10px;
+}
+.public-contactus .icon1{
+    width: 24px;
+    background: url(../images/contactus-icon.png) no-repeat 0 0;
+}
+.public-contactus .icon2{
+    width: 29px;
+    background: url(../images/contactus-icon.png) no-repeat -24px 0;
+}
+.public-contactus .icon3{
+    width: 29px;
+    background: url(../images/contactus-icon.png) no-repeat -53px 0;
+}
+.public-contactus .icon4{
+    width: 24px;
+    background: url(../images/contactus-icon.png) no-repeat -82px 0;
+}
