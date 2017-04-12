@@ -1,3 +1,19 @@
-var re = /^(\d+?)$/;
-// ['102300', '1023', '00']
-console.log(re.exec('102300'));
+function SuperType(){
+    this.property = true;
+}
+SuperType.prototype.getSuperValue = function () {
+    return this.property;
+};
+
+function SubType() {
+    this.subproperty = false;
+}
+
+SubType.prototyp = new SuperType();
+
+SubType.prototyp.getSubValue = function () {
+    return this.subproperty;
+};
+
+var instance = new SubType();
+console.log(instance.getSuperValue());

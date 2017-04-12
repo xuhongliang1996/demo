@@ -46,11 +46,12 @@ html, body {
 @media screen and (max-width: 640px) {
     .container{
         height: 300px;
-        margin-top: 0;
         align-items: flex-start;
     }
     .item-3{
 
+        justify-self: flex-start;
+        margin-top: 0;
     }
     .item-4{
         order: -1;

@@ -1,0 +1,96 @@
+/****************reset******************************/
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+ol,ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+img{
+    border: none;
+    display: block;
+}
+body{
+    background-color: #eeeded;
+}
+.clearfloat:before,
+.clearfloat:after {
+    content: "";
+    display: table;
+}
+.clearfloat:after {
+    clear: both;
+}
+.clearfloat {
+    *zoom: 1;
+}
+/****************header************************/
+header{
+    height: 56px;
+    width:100%;
+    min-width: 600px;
+    background-color: #228abf;
+    position: relative;
+}
+header .logo{
+    height: 36px;
+    width:36px;
+    background: url("images/logo.png") no-repeat scroll;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+header input{
+    width: 314px;
+    height: 28px;
+    border: none;
+    background-color: #ffffff;
+    background-image: url("images/search-cion.png");
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    border-radius: 15px 15px 15px 15px ;
+    box-sizing: border-box;
+    padding-left: 40px;
+    position: absolute;
+    top:15px;
+    right: 156px;
+}
+header .logoin{
+    background: url("images/logoin-icon.png") no-repeat scroll 1px center;
+    position: absolute;
+    top:20px;
+    right: 94px;
+    text-align: center;
+}
+header span{
+    font:12px '黑体';
+    color: #ffffff;
+    padding-left: 18px;
+}
+/************************* wapper *********************************/
+.wapper{
+    width: 1280px;
+    height:1210px;
+}
+/********************aside*********************************/
+aside{
+    width: 260px;
+    height:1210px;
+    background-color: #2a2e3d;
+    float: left;
+}
+aside li{
+    padding-left: 20px;
+}
+/********************main****************************************/
+main{
+    width: 1020px;
+    height:1210px;
+    background-color: #eeeded;
+    float: right;
+}
