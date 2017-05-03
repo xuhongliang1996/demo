@@ -1,71 +1,106 @@
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>task20</title>
     <meta charset="UTF-8">
-	<link rel="SHORTCUT ICON" href="../../../images/logo.png">
+    <title>06 基础JavaScript练习（三）</title>
+    <link rel="SHORTCUT ICON" href="../../../images/logo.png">
     <style type="text/css">
-        #result {
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
+        body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, input, form, a, p, textarea {
+            margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
 
-        #result div {
-            background-color: pink;
+        ol, ul, li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+        }
+
+        .main {
+            width: 500px;
+            height: 200px;
+            margin: 150px auto;
+        }
+
+        ul {
+            text-align: center;
+        }
+
+        li {
+            float: left;
+            min-width: 30px;
             height: 30px;
             line-height: 30px;
-            min-width: 30px;
-            text-align: center;
-            margin: 5px;
+            margin: 5px 2px;
+            background: #FF090A;
+            color: #FFD5D6;
         }
 
-        #result span {
-            background-color: red;
+        #left-into {
+            margin-left: 10px;
+        }
+
+        #left-out {
+            margin-left: 10px;
         }
     </style>
 </head>
-
 <body>
-<div class="ctrl">
-    <textarea rows="5" cols="20" placeholder="请输入字符并用不同符号分隔" id="textArea"></textarea>
-    <button id="insert">插入</button>
-    <button id="search">查询</button>
-    <input id="searchInput" />
+<div class="main">
+    <div class="header">
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        <button id="insert">插入</button>
+        <input type="text" id="queryText">
+        <button id="query">查询</button>
+    </div>
+    <div class="footer">
+        <ul id="addele">
+            <li>0</li>
+            <li>00</li>
+            <li>000</li>
+            <li>0000</li>
+            <li>11</li>
+            <li>30</li>
+        </ul>
+    </div>
 </div>
-<div id="result"></div>
-<script type="text/javascript">
-    $ = function(el) {
-        return document.querySelector(el);
-    }
-    var arrData = [];
-    $('#insert').onclick = function() {
-        var str = $('#textArea').value.trim();
-        var arrWord = str.split(/[^0-9a-zA-Z\u4e00-\u9fa5]+/).filter(function(e) {
-            if (e != null && e.length > 0) {
-                return true;
-            } else {
-                return false;
-            }
-        });
-        arrData = arrData.concat(arrWord);
-        render();
-    }
-    $('#search').onclick = function() {
-        var str = $('#searchInput').value.trim();
-        render(str);
-    }
-    function render(str) {
-        $('#result').innerHTML = arrData.map(function(d) {
-            if (str != null && str.length > 0) {
-                d = d.replace(new RegExp(str, "g"), "<span class='select'>" + str + "</span>");
-            }
-            return '<div>' + d + '</div>';
-        }).join('');
-    }
-</script>
 </body>
+<script type="text/javascript">
+    var insert = document.getElementById('insert');
 
+    var msg = document.getElementById('msg');
+    var addele = document.getElementById('addele');
+
+    var query = document.getElementById('query');
+    var queryText = document.getElementById('queryText');
+
+    (function () {
+        insert.onclick = function () {
+            if (msg.value != "") {
+                var arr = msg.value.split(/[^0-9a-zA-Z\u4e00-\u9fa5]+/);//  ^ 不接受   0-9a-zA-Z\u4e00-\u9fa5 指0-9 a-z A-Z 汉字  + 至少一个
+                for (var i = 0; i < arr.length; i++) {
+                    if (arr[i] != '') {
+                        var li = document.createElement('li');
+                        li.innerHTML = arr[i];
+                        addele.appendChild(li);
+                    }
+                }
+            }
+        };
+
+        query.onclick = function () {
+            var qt = queryText.value;
+            var add_li = addele.getElementsByTagName('li');
+            for (var i = 0; i < add_li.length; i++) {
+                console.log(add_li[i].innerText);
+                var n = add_li[i].innerHTML.replace(new RegExp(qt,"g"), '<span style="background-color:blue;border:1px solid;">' + qt + '</span>');
+                add_li[i].innerHTML = n;
+            }
+        }
+    })()
+</script>
 </html>
