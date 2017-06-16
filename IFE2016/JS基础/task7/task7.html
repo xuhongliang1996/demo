@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07 JavaScript和树（一）</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .first {
+            width: 1000px;
+            height: 500px;
+            border: 1px black solid;
+            background-color: #FFFFFF;
+            box-sizing: border-box;
+            margin: 0 auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .second {
+            float: left;
+            width: 480px;
+            height: 380px;
+            border: 1px black solid;
+            background-color: #FFFFFF;
+            box-sizing: border-box;
+            margin: 60px 9px 60px 9px;
+        }
+
+        .third {
+            float: left;
+            width: 220px;
+            height: 260px;
+            border: 1px black solid;
+            background-color: #FFFFFF;
+            box-sizing: border-box;
+            margin: 60px 9px 60px 9px;
+        }
+
+        .fourth {
+            float: left;
+            width: 100px;
+            height: 140px;
+            border: 1px black solid;
+            background-color: #FFFFFF;
+            box-sizing: border-box;
+            margin: 60px 4px 60px 4px;
+        }
+
+        .input {
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+<div class="first" id="root">
+    <div class="second">
+        <div class="third">
+            <div class="fourth"></div>
+            <div class="fourth"></div>
+        </div>
+        <div class="third">
+            <div class="fourth"></div>
+            <div class="fourth"></div>
+        </div>
+    </div>
+    <div class="second">
+        <div class="third">
+            <div class="fourth"></div>
+            <div class="fourth"></div>
+        </div>
+        <div class="third">
+            <div class="fourth"></div>
+            <div class="fourth"></div>
+        </div>
+    </div>
+</div>
+<div class="input">
+    <input type="button" value="先序遍历">
+    <input type="button" value="中序遍历">
+    <input type="button" value="后序遍历">
+</div>
+<script type="text/javascript">
+    var btn=document.getElementsByTagName("input"),
+        preBtn=btn[0],
+        inBtn=btn[1],
+        lastBtn=btn[2],
+        treeNodes=[],
+        treeRoot=document.getElementById("root"),
+        timer=null;
+    window.onload=function(){
+        preBtn.onclick=function () {
+            reset();
+            preOrder(treeRoot);
+            changeColor();
+        };
+        inBtn.onclick=function(){
+            reset();
+            inOrder(treeRoot);
+            changeColor();
+        };
+        lastBtn.onclick=function(){
+            reset();
+            lastOrder(treeRoot);
+            changeColor();
+        }
+    };
+    function preOrder(node){
+        if(!(node==null)){
+            treeNodes.push(node);
+            preOrder(node.firstElementChild);
+            preOrder(node.lastElementChild);
+        }
+    }
+    function inOrder(node){
+        if(!(node==null)){
+            inOrder(node.firstElementChild);
+            treeNodes.push(node);
+            inOrder(node.lastElementChild);
+        }
+    }
+    function lastOrder(node){
+        if(!(node==null)){
+            lastOrder(node.firstElementChild);
+            lastOrder(node.lastElementChild);
+            treeNodes.push(node);
+        }
+    }
+    function changeColor(){
+        var i=0;
+        treeNodes[i].style.backgroundColor="#F34949";
+        timer=setInterval(function(){
+            i++;
+            if(i<treeNodes.length){
+                treeNodes[i-1].style.backgroundColor="white";
+                treeNodes[i].style.backgroundColor="#F34949";
+            }else{
+                clearInterval(timer);
+                treeNodes[i].style.backgroundColor="white";
+            }
+        },700)
+    }
+    function reset(){
+        treeNodes=[];
+        clearInterval(timer);
+        var divs= document.getElementsByTagName("div");
+        for(var i=0;i<divs.length;i++){
+            divs[i].style.backgroundColor="white";
+        }
+    }
+</script>
+</body>
+</html>
