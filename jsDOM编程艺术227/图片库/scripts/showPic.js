@@ -27,8 +27,6 @@ function prepareGallery() {
     }
 }
 
-addLoadEvent(prepareGallery);
-
 function addLoadEvent(func){
     var oldonload = window.onload;
     if (typeof window.onload !== 'function') {
@@ -49,3 +47,24 @@ function insertAfter(newElement,targetElement) {
         parent.insertBefore(newElement,targetElement.nextSibling);
     }
 }
+
+function preparePlaceholder(){
+    var placeholder=document.createElement("img");
+    placeholder.setAttribute("id","placeholder");
+    placeholder.setAttribute("src","images/placeholder.jpg");
+    placeholder.setAttribute("alt","my image gallery");
+
+    var decription= document.createElement("p");
+    decription.setAttribute("id","description");
+    var desctext=document.createTextNode("choose an image.");
+    decription.appendChild(desctext);
+    var gallery=document.getElementById("imagegallery");
+
+    insertAfter(placeholder,gallery);
+    insertAfter(decription,placeholder);
+
+}
+
+addLoadEvent(prepareGallery);
+addLoadEvent(preparePlaceholder);
+
