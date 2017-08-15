@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>data</title>
+    <script src="../jquery-3.2.1.js"></script>
+    <!-- 引入 ECharts 文件 -->
+    <script src="../echarts.js"></script>
+</head>
+<body>
+<div id="main1" style="height: 500px;width: 800px"></div>
+<div id="main2" style="height: 500px;width: 800px"></div>
+
+<script>
+    $(function () {
+        fun1();
+    });
+    
+    function fun1() {
+        $.ajax({
+            url : "data1.json",
+            type : "post",
+            dataType : "json",
+            success : function (data) {
+                var x_chart=[];
+                var value=[];
+                var value1=[];
+                var value2=[];
+
+                for(var i=0; i<data.gdp.length; i++){
+                    x_chart.push(data.gdp[i].year);
+                    value.push(data.gdp[i].zhanbi);
+                    value1.push(data.gdp[i].num);
+                    value2.push(data.gdp[i].number);
+                }
+                setecharts2(x_chart,value);
+                setecharts1(x_chart,value1,value2);
+            }
+        });
+
+        function setecharts1(x_chart, value1, value2) {
+            var myChart=echarts.init(document.getElementById("main1"));
+
+            var option={
+                title: {
+                    text: '各年一到四月份案件中被害人为单位的走势'
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    formatter: "{a} <br/>{b} : {c}"
+                },
+                legend: {
+                    x: 'right',
+                    data: ['被害人为自然人的数量', '被害人为单位的数量']
+                },
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: x_chart
+                },
+                yAxis: {
+                    type: 'value'
+                },
+                series: [
+                    {
+                        name:'被害人为自然人的数量',
+                        type:'line',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'top'
+                            }
+                        },
+                        data:value1
+                    },
+                    {
+                        name:'被害人为单位的数量',
+                        type:'line',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'top'
+                            }
+                        },
+                        data:value2
+                    }
+                ]
+            };
+
+            myChart.setOption(option);
+        }
+
+        function setecharts2(x_chart, value) {
+            var myChart=echarts.init(document.getElementById("main2"));
+
+            var option={
+                title: {
+                    text: '各年一到四月份案件中被害人为单位的走势'
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    formatter: "{a} <br/>{b} : {c}%"
+                },
+                xAxis: {
+                    type: 'category',
+                    data: x_chart
+                },
+                yAxis: {
+                    type: 'value'
+                },
+                series: [
+                    {
+                        name: '每年案件中被害人为单位的占比走势',
+                        type: 'line',
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'top'
+                            }
+                        },
+                        data: value
+                    }
+                ]
+            };
+
+            myChart.setOption(option);
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>echarts</title>
+    <script src="jquery-3.2.1.js"></script>
+    <!-- 引入 ECharts 文件 -->
+    <script src="echarts.js"></script>
+
+</head>
+<body>
+<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+<div id="main" style="width: 600px;height:400px;"></div>
+
+<script type="text/javascript">
+    // 基于准备好的dom，初始化ECharts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    var option = {
+        tooltip: {},
+        legend: {
+            data:['销量']
+        },
+        xAxis: {
+            data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+        },
+        yAxis: {},
+        series: [{
+            name: '销量',
+            type: 'bar',
+            data: [5, 20, 36, 10, 10, 20]
+        }]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+    // 图例开关的行为只会触发 legendselectchanged 事件
+    myChart.on('legendselectchanged', function (params) {
+        // 获取点击图例的选中状态
+        var isSelected = params.selected[params.name];
+        // 在控制台中打印
+        console.log((isSelected ? '选中了' : '取消选中了') + '图例' + params.name);
+        // 打印所有图例的状态
+        console.log(params.selected);
+    });
+</script>
+</body>
+</html>

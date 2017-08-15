@@ -1,0 +1,45 @@
+{
+  "TYPE": [
+    {
+      "MAIN_METHOD": "传统骗术",
+      "METHOD": "唱双簧",
+      "MONEY": 5729481
+    },
+    {
+      "MAIN_METHOD": "传统骗术",
+      "METHOD": "搞脑子",
+      "MONEY": 0
+    },
+    {
+      "MAIN_METHOD": "传统骗术",
+      "METHOD": "摸奖",
+      "MONEY": 2259249
+    },
+    {
+      "MAIN_METHOD": "国家财产类诈骗",
+      "METHOD": "摸奖",
+      "MONEY": 3766314.8
+    },
+    {
+      "MAIN_METHOD": "国家财产类诈骗",
+      "METHOD": "医保诈骗",
+      "MONEY": 43535851.86
+    },
+    {
+      "MAIN_METHOD": "国家财产类诈骗",
+      "METHOD": "医保诈骗",
+      "MONEY": 13067109
+    },
+    {
+      "MAIN_METHOD": "国家财产类诈骗",
+      "METHOD": "国家专项资金",
+      "MONEY": 4937564.64
+    },
+    {
+      "MAIN_METHOD": "国家财产类诈骗",
+      "METHOD": "国家专项资金",
+      "MONEY": 18884464.88
+    }
+
+  ]
+}

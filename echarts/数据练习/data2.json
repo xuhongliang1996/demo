@@ -1,0 +1,560 @@
+{
+  "city": [
+    {
+      "HIGH_COUNRT_CITY_NAME": "丽水",
+      "number": 907
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "台州",
+      "number": 2353
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "嘉兴",
+      "number": 2761
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "宁波",
+      "number": 3195
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "杭州",
+      "number": 4217
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "温州",
+      "number": 3064
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "湖州",
+      "number": 1477
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "绍兴",
+      "number": 3356
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "舟山",
+      "number": 447
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "衢州",
+      "number": 1000
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "金华",
+      "number": 4079
+    }
+  ],
+  "count": [
+    {
+      "HIGH_COUNRT_CITY_NAME": "丽水",
+      "COUNRT_NAME": "丽中",
+      "number": 14
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "丽水",
+      "COUNRT_NAME": "云和",
+      "number": 60
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "丽水",
+      "COUNRT_NAME": "庆元",
+      "number": 69
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "丽水",
+      "COUNRT_NAME": "景宁",
+      "number": 32
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "丽水",
+      "COUNRT_NAME": "松阳",
+      "number": 67
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "丽水",
+      "COUNRT_NAME": "缙云",
+      "number": 138
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "丽水",
+      "COUNRT_NAME": "莲都",
+      "number": 242
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "丽水",
+      "COUNRT_NAME": "遂昌",
+      "number": 89
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "丽水",
+      "COUNRT_NAME": "青田",
+      "number": 118
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "丽水",
+      "COUNRT_NAME": "龙泉",
+      "number": 78
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "台州",
+      "COUNRT_NAME": "三门",
+      "number": 264
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "台州",
+      "COUNRT_NAME": "临海",
+      "number": 329
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "台州",
+      "COUNRT_NAME": "仙居",
+      "number": 197
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "台州",
+      "COUNRT_NAME": "台中",
+      "number": 27
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "台州",
+      "COUNRT_NAME": "天台",
+      "number": 176
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "台州",
+      "COUNRT_NAME": "椒江",
+      "number": 350
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "台州",
+      "COUNRT_NAME": "温岭",
+      "number": 332
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "台州",
+      "COUNRT_NAME": "玉环",
+      "number": 195
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "台州",
+      "COUNRT_NAME": "路桥",
+      "number": 218
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "台州",
+      "COUNRT_NAME": "黄岩",
+      "number": 265
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "嘉兴",
+      "COUNRT_NAME": "南湖",
+      "number": 323
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "嘉兴",
+      "COUNRT_NAME": "嘉中",
+      "number": 18
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "嘉兴",
+      "COUNRT_NAME": "嘉善",
+      "number": 366
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "嘉兴",
+      "COUNRT_NAME": "平湖",
+      "number": 538
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "嘉兴",
+      "COUNRT_NAME": "桐乡",
+      "number": 387
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "嘉兴",
+      "COUNRT_NAME": "海宁",
+      "number": 496
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "嘉兴",
+      "COUNRT_NAME": "海盐",
+      "number": 377
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "嘉兴",
+      "COUNRT_NAME": "秀洲",
+      "number": 256
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "宁波",
+      "COUNRT_NAME": "余姚",
+      "number": 680
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "宁波",
+      "COUNRT_NAME": "北仑",
+      "number": 136
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "宁波",
+      "COUNRT_NAME": "奉化",
+      "number": 120
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "宁波",
+      "COUNRT_NAME": "宁中",
+      "number": 34
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "宁波",
+      "COUNRT_NAME": "宁海",
+      "number": 273
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "宁波",
+      "COUNRT_NAME": "慈溪",
+      "number": 520
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "宁波",
+      "COUNRT_NAME": "江东",
+      "number": 173
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "宁波",
+      "COUNRT_NAME": "江北",
+      "number": 204
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "宁波",
+      "COUNRT_NAME": "海曙",
+      "number": 367
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "宁波",
+      "COUNRT_NAME": "象山",
+      "number": 152
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "宁波",
+      "COUNRT_NAME": "鄞州",
+      "number": 428
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "宁波",
+      "COUNRT_NAME": "镇海",
+      "number": 108
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "杭州",
+      "COUNRT_NAME": "上城",
+      "number": 270
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "杭州",
+      "COUNRT_NAME": "下城",
+      "number": 311
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "杭州",
+      "COUNRT_NAME": "下沙",
+      "number": 33
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "杭州",
+      "COUNRT_NAME": "临安",
+      "number": 219
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "杭州",
+      "COUNRT_NAME": "余杭",
+      "number": 417
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "杭州",
+      "COUNRT_NAME": "富阳",
+      "number": 452
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "杭州",
+      "COUNRT_NAME": "建德",
+      "number": 177
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "杭州",
+      "COUNRT_NAME": "拱墅",
+      "number": 258
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "杭州",
+      "COUNRT_NAME": "杭中",
+      "number": 38
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "杭州",
+      "COUNRT_NAME": "桐庐",
+      "number": 204
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "杭州",
+      "COUNRT_NAME": "江干",
+      "number": 256
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "杭州",
+      "COUNRT_NAME": "淳安",
+      "number": 315
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "杭州",
+      "COUNRT_NAME": "滨江",
+      "number": 90
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "杭州",
+      "COUNRT_NAME": "萧山",
+      "number": 899
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "杭州",
+      "COUNRT_NAME": "西湖",
+      "number": 278
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "温州",
+      "COUNRT_NAME": "乐清",
+      "number": 450
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "温州",
+      "COUNRT_NAME": "平阳",
+      "number": 241
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "温州",
+      "COUNRT_NAME": "文成",
+      "number": 41
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "温州",
+      "COUNRT_NAME": "永嘉",
+      "number": 296
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "温州",
+      "COUNRT_NAME": "泰顺",
+      "number": 70
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "温州",
+      "COUNRT_NAME": "洞头",
+      "number": 12
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "温州",
+      "COUNRT_NAME": "温中",
+      "number": 54
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "温州",
+      "COUNRT_NAME": "瑞安",
+      "number": 538
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "温州",
+      "COUNRT_NAME": "瓯海",
+      "number": 291
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "温州",
+      "COUNRT_NAME": "苍南",
+      "number": 343
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "温州",
+      "COUNRT_NAME": "鹿城",
+      "number": 554
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "温州",
+      "COUNRT_NAME": "龙湾",
+      "number": 174
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "湖州",
+      "COUNRT_NAME": "南浔",
+      "number": 246
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "湖州",
+      "COUNRT_NAME": "吴兴",
+      "number": 416
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "湖州",
+      "COUNRT_NAME": "安吉",
+      "number": 186
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "湖州",
+      "COUNRT_NAME": "德清",
+      "number": 258
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "湖州",
+      "COUNRT_NAME": "湖中",
+      "number": 15
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "湖州",
+      "COUNRT_NAME": "长兴",
+      "number": 356
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "绍兴",
+      "COUNRT_NAME": "上虞",
+      "number": 389
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "绍兴",
+      "COUNRT_NAME": "嵊州",
+      "number": 398
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "绍兴",
+      "COUNRT_NAME": "新昌",
+      "number": 307
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "绍兴",
+      "COUNRT_NAME": "柯桥",
+      "number": 506
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "绍兴",
+      "COUNRT_NAME": "绍中",
+      "number": 262
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "绍兴",
+      "COUNRT_NAME": "诸暨",
+      "number": 756
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "绍兴",
+      "COUNRT_NAME": "越城",
+      "number": 738
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "舟山",
+      "COUNRT_NAME": "定海",
+      "number": 212
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "舟山",
+      "COUNRT_NAME": "岱山",
+      "number": 74
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "舟山",
+      "COUNRT_NAME": "嵊泗",
+      "number": 19
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "舟山",
+      "COUNRT_NAME": "普陀",
+      "number": 137
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "舟山",
+      "COUNRT_NAME": "舟中",
+      "number": 5
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "衢州",
+      "COUNRT_NAME": "常山",
+      "number": 112
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "衢州",
+      "COUNRT_NAME": "开化",
+      "number": 98
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "衢州",
+      "COUNRT_NAME": "柯城",
+      "number": 319
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "衢州",
+      "COUNRT_NAME": "江山",
+      "number": 263
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "衢州",
+      "COUNRT_NAME": "衢中",
+      "number": 5
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "衢州",
+      "COUNRT_NAME": "衢江",
+      "number": 88
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "衢州",
+      "COUNRT_NAME": "龙游",
+      "number": 115
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "金华",
+      "COUNRT_NAME": "东阳",
+      "number": 668
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "金华",
+      "COUNRT_NAME": "义乌",
+      "number": 1252
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "金华",
+      "COUNRT_NAME": "兰溪",
+      "number": 344
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "金华",
+      "COUNRT_NAME": "婺城",
+      "number": 595
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "金华",
+      "COUNRT_NAME": "武义",
+      "number": 181
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "金华",
+      "COUNRT_NAME": "永康",
+      "number": 432
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "金华",
+      "COUNRT_NAME": "浦江",
+      "number": 319
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "金华",
+      "COUNRT_NAME": "磐安",
+      "number": 102
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "金华",
+      "COUNRT_NAME": "金东",
+      "number": 141
+    },
+    {
+      "HIGH_COUNRT_CITY_NAME": "金华",
+      "COUNRT_NAME": "金中",
+      "number": 45
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>data2</title>
+    <script src="../jquery-3.2.1.js"></script>
+    <!-- 引入 ECharts 文件 -->
+    <script src="../echarts.js"></script>
+</head>
+<body>
+<div id="main1" style="width: 500px;height: 500px;"></div>
+<div id="main2" style="width: 500px;height: 500px;"></div>
+
+<script type="text/javascript">
+    $(function () {
+        fun1();
+    });
+
+    function fun1() {
+        $.ajax({
+            url: "data2.json",
+            type: "post",
+            dataType: "json",
+            async: false,
+            success: function (data) {
+                var data_chart=[];
+                var max_chart=[];
+                var min_chart=[];
+
+
+            }
+
+            setchart1();
+            setchart2();
+        })
+    }
+    
+    function setchart1() {
+        var mychart1=echarts.init(document.getElementById("main1"));
+        option = {
+            //标题
+            title: {
+                text: '浙江省'
+            },
+            //提示
+            tooltip: {
+                trigger: 'item',
+                formatter: '{b}：{c}'
+            },
+            //视觉映射组件
+            visualMap: {
+                //连续型视觉映射组件
+                type:'continuous',
+                //允许的最小值
+                min: 5000,
+                //允许的最大值
+                max: 0,
+                //定位
+                left: 'left',
+                top: 'bottom',
+                text: ['高','低'],           // 文本，默认为数值文本
+                //是否显示拖拽用的手柄
+                calculable: true,
+                inRange: {
+                    color: ['#CCDDFF','#0167D0'],
+                    symbolSize: [30, 100]
+                }
+            },
+            series: [
+                {
+                    name: '浙江',
+                    type: 'map',
+                    map: '浙江',
+                    label: {
+                        normal: {
+                            show: true
+                        },
+                        emphasis: {
+                            show: true
+                        }
+                    },
+                    itemStyle:{
+                        normal:{
+                            areaColor:'rgba(0,0,0,0)',
+                        },
+                        emphasis:{
+                            areaColor:'#5A5AAD',
+                        }
+                    },
+                    data:data_chart
+                }
+            ]
+        };
+        mychart1.setOption(option);
+    }
+    
+    function setchart2() {
+        var mychart1=echarts.init(document.getElementById("main2"));
+    }
+</script>
+</body>
+</html>
